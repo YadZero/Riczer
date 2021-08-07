@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="../doc/assets/css/main.css">
+        <link rel="stylesheet" href="../doc/assets/css/community.css">
     </head>
     <body>
         <div class="mainHeaderDef">
@@ -13,11 +14,82 @@
             </div>
         </div>
         <div name="separator">
-            <br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br>
         </div>
-        <!-- Texto bien vergas XD -->
-        <div style="position: relative; color: black; font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 70px; left: 20%; top: 130px;">
-            Esta parte del sitio sigue<br>sobre construccion :(
+        <br>
+        <div class="selectorWs" id="selectorHS">
+            <div class="option active" id="iniciobt">Inicio</div>
+            &nbsp;
+            <div class="option" id="colaboradoresbt">Colaboradores</div>
+            &nbsp;
+            <div class="option" id="buscarbt">Buscar</div>
         </div>
+        <br>
+        <div class="sections">
+            <div class="sect" id="inicioSec">
+                <div class="box featured" id="featured01" style="background-image: url('../doc/assets/images/featured01.png');"></div>
+                <div class="box featured" id="featured02" style="background-image: url('../doc/assets/images/featured02.png');"></div>
+                <script>
+                    let featured01 = document.getElementById('featured01')
+                    let featured02 = document.getElementById('featured02')
+
+                    featured01.addEventListener("click", (e) => {
+                        e.preventDefault()
+                        window.location = "./articulos/featured-01/"
+                    })
+
+                    featured02.addEventListener("click", (e) => {
+                        e.preventDefault()
+                        window.location = "./articulos/featured-02/"
+                    })
+                </script>
+            </div>
+            <div class="sect collab" id="colabSec" style="display: none;">
+                no hay nadie jaja que loco
+            </div>
+            <div class="sect search" id="buscarSec" style="display: none;">
+                no hay suficientes articulos como para que haya una herramienta de busqueda
+                <br>(no es una excusa porque tenia flojera)
+            </div>
+        </div>
+        <script>
+            let inicioB = document.getElementById('iniciobt')
+            let colabB = document.getElementById('colaboradoresbt')
+            let buscarB = document.getElementById('buscarbt')
+            let inicioSec = document.getElementById('inicioSec')
+            let colabSec = document.getElementById('colabSec')
+            let buscarSec = document.getElementById('buscarSec')
+
+            inicioB.addEventListener("click", (e) => {
+                e.preventDefault()
+                if(inicioB.classList == "option active") return;
+                colabB.classList = "option"
+                buscarB.classList = "option"
+                inicioB.classList = "option active"
+                inicioSec.style.display = "flex"
+                colabSec.style.display = "none"
+                buscarSec.style.display = "none"
+            })
+            colabB.addEventListener("click", (e) => {
+                e.preventDefault()
+                if(colabB.classList == "option active") return;
+                inicioB.classList = "option"
+                buscarB.classList = "option"
+                colabB.classList = "option active"
+                inicioSec.style.display = "none"
+                colabSec.style.display = "flex"
+                buscarSec.style.display = "none"
+            })
+            buscarB.addEventListener("click", (e) => {
+                e.preventDefault()
+                if(buscarB.classList == "option active") return;
+                inicioB.classList = "option"
+                colabB.classList = "option"
+                buscarB.classList = "option active"
+                inicioSec.style.display = "none"
+                colabSec.style.display = "none"
+                buscarSec.style.display = "flex"
+            })
+        </script>
     </body>
 </html>
