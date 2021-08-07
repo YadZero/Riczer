@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="doc/assets/css/main.css">
+        <link rel="stylesheet" href="doc/assets/css/home.css">
+    </head>
+    <body>
+        <div class="mainHeaderDef">
+            <div class="discordFontTxT">RICZER</div>
+            <div class="selectionField">
+                <a class="text" href="./">INICIO</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="text" href="comunidad/">COMUNIDAD</a>
+            </div>
+        </div>
+        <div name="separator">
+            <br><br><br><br><br><br><br><br><br>
+        </div>
+        <audio id="idk-lol" src="doc/assets/audio/vine-boom.mp3"></audio>
+        <audio id="oiezy" src="doc/assets/audio/oiezy.mp3"></audio>
+        <div id="niidea">
+            <div class="infoNew">
+                <img src="doc/assets/images/riczer_new_logo.png" id="logoRiczeruwu" class="logo">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <!-- Si, soy floja como para poner esto en código css xd -->
+                <div class="info">
+                    <div class="title" id="tituloRiczer">Riczer</div>
+                    <div class="desc" id="descRiczer">
+                        Riczer es un youtuber Paraguayo
+                        <br>que actualmente se encuentra
+                        <br>en Peru con su pareja Yessi.
+                        <br>Su canal actual fue iniciado el
+                        <br>3 de marzo, 2019.
+                        <br>A lo largo del tiempo consiguio
+                        <br>bastantes seguidores, mayormente en
+                        <br>su epoca de subir memes
+                    </div>
+                </div>
+            </div>
+            <div class="lolxd" id="changeLogo">No clickes aqui!!</div>
+        </div>
+        <hr size="3" width="620px" color="#404040" style="position: relative; top: 106px;">
+        <div class="jajanose">Historia de Riczer</div>
+        <img src="doc/assets/images/riczer_historiaquizasxd.png" class="nose">
+        <hr size="3" width="620px" color="#404040" style="position: relative; top: 10px;">
+        <div id="sociales">
+            <div id="links" class="links">
+                <div class="style">
+                    <img src="doc/assets/images/youtube_logo.png" class="icon">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="text" href="https://www.youtube.com/c/RICZER" target="_blank">RICZER</a>
+                </div>
+                <br><br>
+                <div class="style">
+                    <img src="doc/assets/images/discord_logo.png" class="icon">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="text" href="https://discord.gg/Riczer" target="_blank">#RICZER</a>
+                </div>
+                <br><br>
+                <div class="style">
+                    <img src="doc/assets/images/twitch_logo.png" class="icon">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="text" href="https://www.twitch.tv/riczeer" target="_blank">Riczeer</a>
+                </div>
+                <br><br>
+                <div class="style">
+                    <img src="doc/assets/images/twitter_logo.png" class="icon">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="text" href="https://twitter.com/TioRiczer" target="_blank">TioRiczer</a>
+                </div>
+            </div>
+        </div>
+        <div name="separator2" style="position: relative; top: 180px;">
+            <br><br><br><br><br>
+        </div>
+        <div class="devInfo">
+            <img src="doc/assets/images/yadlol.png" class="icon1">
+            <img src="doc/assets/images/arrow.png" class="icon2">
+            <div class="txtZ">Sitio web desarrollado por esta zorra!</div>
+        </div>
+        <div name="endSeparatorLol" style="position: relative; top: 180px;">
+            <br><br><br><br><br>
+        </div>
+        <script>
+            let si = document.getElementById('idk-lol')
+            let oiezy = document.getElementById('oiezy')
+            let logo = document.getElementById('logoRiczeruwu')
+            let title = document.getElementById('tituloRiczer')
+            let desc = document.getElementById('descRiczer')
+            console.log(si)
+            let logoChange = document.getElementById('changeLogo')
+            logoChange.addEventListener("click", (e) => {
+                e.preventDefault()
+                si.play()
+                setTimeout(() => {
+                    logo.src = "doc/assets/images/riczer_old_logo.png"
+                    title.innerText = "Tio Riczer"
+                    title.style.left = "-20px"
+                    desc.innerHTML = `Oie zy 100% hailgrasa #momosad:'vv<br>when tu elfa no te ama v':
+                                     <br><br>vieja version de Riczer xdXdx<br><br><br><br><br><br>
+                                     `
+                oiezy.play()
+                document.getElementById('niidea').removeChild(logoChange)
+                }, 310);
+            })
+        </script>
+    </body>
+</html>

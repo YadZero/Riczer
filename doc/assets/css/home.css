@@ -1,0 +1,131 @@
+/* main color: #4845cc */
+
+.infoNew {
+    width: fit-content;
+    position: relative;
+    padding: 20px 20px;
+    left: 20%;
+    top: 50px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 30px;
+    display: flex;
+    pointer-events: none;
+    user-select: none;
+}
+
+.infoNew .logo {
+    position: relative;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    left: 1px;
+    top: 25px;
+}
+
+.infoNew .info .title {
+    position: relative;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.infoNew .info .desc {
+    color: rgb(22, 22, 22);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    max-width: 410px;
+    position: relative;
+    left: -25px;
+}
+
+.lolxd {
+    position: relative;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    left: 44.5%;
+    top: 60px;
+    width: fit-content;
+    user-select: none;
+}
+
+.links {
+    position: relative;
+    user-select: none;
+    left: 36%;
+    top: 160px;
+}
+
+.links .style {
+    position: relative;
+    display: flex;
+}
+
+.links .style .icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 44%;
+}
+
+.links .style .text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 10px;
+    font-size: 45px;
+    user-select: none;
+    text-decoration: none;
+    color: black;
+}
+
+.nose {
+    position: relative;
+    left: 16%;
+    top: 70px;
+    width: 900px;
+    height: 900px;
+}
+
+.jajanose {
+    position: relative;
+    color: black;
+    font-size: 60px;
+    font-weight: bold;
+    left: 30%;
+    top: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.devInfo {
+    position: relative;
+    display: flex;
+    top: 150px;
+    left: 15.5%;
+    max-width: 900px;
+    padding: 20px 20px;
+    background-color: rgb(221, 221, 221);
+    border-radius: 40px;
+}
+
+.devInfo .icon1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 90px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.devInfo .icon2 {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: 20px;
+}
+
+.devInfo .txtZ {
+    position: relative;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    top: 30px;
+}
