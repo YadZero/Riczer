@@ -1,0 +1,29 @@
+{
+    "articulos": {
+        "1": {
+            "nombre": "Creacion de la web",
+            "descripcion": "Pene",
+            "fecha_creacion": "07/08/2021"
+        },
+        "2": {
+            "nombre": "Serie Riczer",
+            "descripcion": "mini serie no oficial de riczer",
+            "fecha_creacion": "07/08/2021"
+        },
+        "3": {
+            "nombre": "Polemica",
+            "descripcion": "si",
+            "fecha_creacion": "25/08/2021"
+        },
+        "4": {
+            "nombre": "¿Onlyfans de Jeferson?",
+            "descripcion": "que maricon",
+            "fecha_creacion": "25/08/2021"
+        },
+        "5": {
+            "nombre": "Gente Importante",
+            "descripcion": "nose",
+            "fecha_creacion": "25/08/2021"
+        }
+    }
+}

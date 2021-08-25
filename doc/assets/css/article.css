@@ -3,11 +3,12 @@
     width: 96%;
     height: 280px;
     background-color: grey;
-    left: 0%;
-    transform: translate(2%, 0%);
+    left: 50%;
+    transform: translate(-50%, 0%);
 
     background-attachment: fixed;
     background-position: center;
+    background-position-x: 620px;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -16,6 +17,8 @@
 
 .title {
     position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
     font-size: 60px;
     width: 100%;
     text-align: center;
@@ -26,6 +29,8 @@
 .autor {
     position: relative;
     font-size: 22px;
+    left: 50%;
+    transform: translate(-50%, 0%);
     color: rgb(99, 96, 96);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -35,6 +40,8 @@
 
 .desc {
     position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;

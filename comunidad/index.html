@@ -17,79 +17,46 @@
             <br><br><br><br><br><br><br>
         </div>
         <br>
-        <div class="selectorWs" id="selectorHS">
-            <div class="option active" id="iniciobt">Inicio</div>
+        <div class="categories" id="categoriesC">
+            <div class="category" id="discordCt">Discord</div>
             &nbsp;
-            <div class="option" id="colaboradoresbt">Colaboradores</div>
-            &nbsp;
-            <div class="option" id="buscarbt">Buscar</div>
+            <div class="category" id="articulosCt">Articulos</div>
         </div>
-        <br>
-        <div class="sections">
-            <div class="sect" id="inicioSec">
-                <div class="box featured" id="featured01" style="background-image: url('../doc/assets/images/featured01.png');"></div>
-                <div class="box featured" id="featured02" style="background-image: url('../doc/assets/images/featured02.png');"></div>
                 <script>
-                    let featured01 = document.getElementById('featured01')
-                    let featured02 = document.getElementById('featured02')
+                    let discordCtr = document.getElementById('discordCt')
+                    let articlesCtr = document.getElementById('articulosCt')
 
-                    featured01.addEventListener("click", (e) => {
+                    discordCtr.addEventListener("click", (e) => {
                         e.preventDefault()
-                        window.location = "./articulos/featured-01/"
+                        window.location = "./discord/"
                     })
 
-                    featured02.addEventListener("click", (e) => {
+                    articlesCtr.addEventListener("click", (e) => {
                         e.preventDefault()
-                        window.location = "./articulos/featured-02/"
+                        window.location = "./articulos/"
                     })
                 </script>
-            </div>
-            <div class="sect collab" id="colabSec" style="display: none;">
-                no hay nadie jaja que loco
-            </div>
-            <div class="sect search" id="buscarSec" style="display: none;">
-                no hay suficientes articulos como para que haya una herramienta de busqueda
-                <br>(no es una excusa porque tenia flojera)
+        <br><br><br><br><br>
+        <div class="moreInfo">
+            <div class="lacomunidadesunachota">La Comunidad</div>
+            <br><br><br><br><br>
+            <div class="fuckingText" style="background-image: url('../doc/assets/images/fondoDou.PNG');"></div>
+            <br><br><br>
+            <div class="descPro">
+                La comunidad de Riczer es una comunidad muy grande,
+                <br>a fecha de hoy (24/08/2021) cuenta con
+                <br>la cantidad de 69,666 Miembros en su
+                <br>servidor de Discord (re loco el numero)
+                <br><br><br>puedes encontrar gente de todo tipo aqui!
+                <br>femboys, furros, nazis (esbromaxd), lgbtq+, gente común,
+                <br>etc.
+                <br><br>Basicamente un monton de cosas, pero la comunidad está
+                <br>más centrada en una comunidad de memes :)
+                <br>(mayormente shitpost)
             </div>
         </div>
-        <script>
-            let inicioB = document.getElementById('iniciobt')
-            let colabB = document.getElementById('colaboradoresbt')
-            let buscarB = document.getElementById('buscarbt')
-            let inicioSec = document.getElementById('inicioSec')
-            let colabSec = document.getElementById('colabSec')
-            let buscarSec = document.getElementById('buscarSec')
-
-            inicioB.addEventListener("click", (e) => {
-                e.preventDefault()
-                if(inicioB.classList == "option active") return;
-                colabB.classList = "option"
-                buscarB.classList = "option"
-                inicioB.classList = "option active"
-                inicioSec.style.display = "flex"
-                colabSec.style.display = "none"
-                buscarSec.style.display = "none"
-            })
-            colabB.addEventListener("click", (e) => {
-                e.preventDefault()
-                if(colabB.classList == "option active") return;
-                inicioB.classList = "option"
-                buscarB.classList = "option"
-                colabB.classList = "option active"
-                inicioSec.style.display = "none"
-                colabSec.style.display = "flex"
-                buscarSec.style.display = "none"
-            })
-            buscarB.addEventListener("click", (e) => {
-                e.preventDefault()
-                if(buscarB.classList == "option active") return;
-                inicioB.classList = "option"
-                colabB.classList = "option"
-                buscarB.classList = "option active"
-                inicioSec.style.display = "none"
-                colabSec.style.display = "none"
-                buscarSec.style.display = "flex"
-            })
-        </script>
+        <div name="sep2">
+            <br><br><br><br><br><br><br>
+        </div>
     </body>
 </html>
